@@ -1,7 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#f5f2e9">
+    <meta
+        name="description"
+        content="Portfolio personal de Devsilon. Proyectos, aplicaciones y experimentos."
+    >
+
+    <title>Devsilon — Portfolio personal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
 <body>
-  <main>
-    <h1><i>~ Devsilon Web page ~</i></h1>
-    <p> This page is under construction!
-    Come back later to see what's up! {smilyface}</p>
-  </main>
+    <header class="site-header">
+        <nav class="navigation container" aria-label="Navegación principal">
+            <a class="brand" href="./" aria-label="Devsilon, página de inicio">
+                <span class="brand-mark" aria-hidden="true">D.</span>
+                <span>Devsilon</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#projects">Proyectos</a>
+                <a href="#about">Sobre mí</a>
+                <a href="#contact">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container" id="about">
+            <div class="hero-content">
+                <span class="eyebrow">
+                    PORTFOLIO PERSONAL
+                </span>
+
+                <h1>
+                    Web de presentación. Una especie de "Hub" para mis proyectos finalizados y en proceso. Aún en desarrollo :P
+                </h1>
+
+                <p class="hero-description">
+                    Hola! Soy <b>Devsilon</b>. Este es mi "Hub" para
+                    compartir mis aplicaciones, experimentos y proyectos en
+                    los que trabajo.
+                </p>
+
+                <a class="button button-primary" href="#projects">
+                    Explorar proyectos
+                    <span aria-hidden="true">↘</span>
+                </a>
+            </div>
+
+            <div class="hero-decoration" aria-hidden="true">
+                <div class="decoration-circle decoration-circle-outer"></div>
+                <div class="decoration-circle decoration-circle-inner"></div>
+                <span class="decoration-letter">D</span>
+                <span class="decoration-caption">CREAR · EXPLORAR · APRENDER</span>
+            </div>
+        </section>
+
+        <section class="projects-section" id="projects">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <h2>Mis proyectos</h2>
+                    </div>
+                </div>
+
+                <div class="project-grid">
+                    <a
+                        class="project-card"
+                        href="https://devsilonv.github.io/"
+                        aria-label="Ver proyecto uno"
+                    >
+                        <div class="project-preview preview-one" aria-hidden="true">
+                            <span class="preview-label">PROJECT / 01</span>
+                            <div class="preview-art preview-art-one">
+                                <span class="art-dot"></span>
+                                <span class="art-line"></span>
+                                <span class="art-line art-line-short"></span>
+                            </div>
+                            <span class="preview-number">01</span>
+                        </div>
+
+                        <div class="project-info">
+                            <div>
+                                <span class="project-category">APLICACIÓN</span>
+                                <h3>Proyecto uno</h3>
+                            </div>
+                            <span class="project-arrow" aria-hidden="true">↗</span>
+                        </div>
+
+                        <p class="project-description">
+                            Descripción de proyecto 1
+                        </p>
+                    </a>
+
+                    <a
+                        class="project-card"
+                        href="https://devsilonv.github.io/"
+                        aria-label="Ver proyecto dos"
+                    >
+                        <div class="project-preview preview-two" aria-hidden="true">
+                            <span class="preview-label">PROJECT / 02</span>
+                            <div class="preview-art preview-art-two">
+                                <span class="art-square"></span>
+                                <span class="art-square art-square-offset"></span>
+                                <span class="art-square art-square-small"></span>
+                            </div>
+                            <span class="preview-number">02</span>
+                        </div>
+
+                        <div class="project-info">
+                            <div>
+                                <span class="project-category">HERRAMIENTA</span>
+                                <h3>Proyecto dos</h3>
+                            </div>
+                            <span class="project-arrow" aria-hidden="true">↗</span>
+                        </div>
+
+                        <p class="project-description">
+                            Descripción de proyecto 2
+                        </p>
+                    </a>
+
+                    <a
+                        class="project-card"
+                        href="https://devsilonv.github.io/"
+                        aria-label="Ver proyecto tres"
+                    >
+                        <div class="project-preview preview-three" aria-hidden="true">
+                            <span class="preview-label">PROJECT / 03</span>
+                            <div class="preview-art preview-art-three">
+                                <span class="art-ring"></span>
+                                <span class="art-ring art-ring-inner"></span>
+                                <span class="art-center"></span>
+                            </div>
+                            <span class="preview-number">03</span>
+                        </div>
+
+                        <div class="project-info">
+                            <div>
+                                <span class="project-category">EXPERIMENTO</span>
+                                <h3>Proyecto tres</h3>
+                            </div>
+                            <span class="project-arrow" aria-hidden="true">↗</span>
+                        </div>
+
+                        <p class="project-description">
+                            Descripción de proyecto 3
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section container" id="contact">
+            <div class="contact-panel">
+                <span class="eyebrow">CONTACTOS</span>
+                <h2>¿Conectamos?</h2>
+                <p>
+                    Mis redes, por si quieres curiosear...
+                </p>
+
+                <div class="social-links" aria-label="Redes sociales">
+                    <!--
+                        Para activar una red, añade su URL en data-url.
+                        Ejemplo:
+                        data-url="https://github.com/tu-usuario"
+                    -->
+
+                    <a class="social-link" data-url="" aria-disabled="true">
+                        GitHub? <span aria-hidden="true">↗</span>
+                    </a>
+
+                    <a class="social-link" data-url="" aria-disabled="true">
+                        LinkedIn? <span aria-hidden="true">↗</span>
+                    </a>
+
+                    <a class="social-link" data-url="" aria-disabled="true">
+                        X? <span aria-hidden="true">↗</span>
+                    </a>
+
+                    <a class="social-link" data-url="" aria-disabled="true">
+                        Email? <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <a class="brand footer-brand" href="./">
+                <span class="brand-mark" aria-hidden="true">D.</span>
+                <span>Devsilon</span>
+            </a>
+
+            <p>
+                © <span id="current-year">2026</span> Devsilon.
+                Hecho un poco a prisas.
+            </p>
+
+            <a class="back-to-top" href="#top" aria-label="Volver arriba">
+                Volver arriba ↑
+            </a>
+        </div>
+    </footer>
 </body>
+</html>
