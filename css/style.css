@@ -337,14 +337,24 @@ svg {
 .project-preview {
     position: relative;
     display: grid;
-    min-height: 220px;
+    height: 275px;        /* altura fija, probar también 220px */
     place-items: center;
     overflow: hidden;
     border-radius: 12px;
 }
 
+.preview-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
 .preview-one {
-    background: #e5e9dd;
+    /* background: #e5e9dd; */
+    background: #0b1f3a;
 }
 
 .preview-two {
